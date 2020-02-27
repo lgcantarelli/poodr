@@ -3,6 +3,8 @@ class Driver
     vehicle = trip.vehicle
     gas_up(vehicle)
     fill_water_tank(vehicle)
+
+    true
   end
 
   def gas_up(vehicle)

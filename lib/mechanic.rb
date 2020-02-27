@@ -3,6 +3,8 @@ class Mechanic
     trip.bycicles.each do |bycicle|
       prepare_bycicle(bycicle)
     end
+
+    true
   end
 
   def prepare_bycicle(bycicle)

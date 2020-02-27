@@ -8,8 +8,12 @@ class Trip
   end
 
   def prepare(preparers)
+    preparations = []
+      
     preparers.each do |preparer|
-      preparer.prepare_trip(self)
+      preparations << preparer.prepare_trip(self)
     end
+
+    preparations.all? { |p| p == true }
   end
 end
